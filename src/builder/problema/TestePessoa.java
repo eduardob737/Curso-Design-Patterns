@@ -9,7 +9,7 @@ public class TestePessoa {
         // quais são os atributos esperados no construtor sem a indicação da IDE, e também é preciso seguir a ordem de
         // atributos definida no construtor, caso contrário não será possível criar o objeto.
 
-        Pessoa pessoa = new Pessoa(
+        /*Pessoa pessoa = new Pessoa(
                 "Eduardo",
                 "Barbosa",
                 "12345678901",
@@ -17,6 +17,6 @@ public class TestePessoa {
                 "Edu",
                 "01-09-1910");
 
-        System.out.println(pessoa);
+        System.out.println(pessoa);*/
     }
 }

@@ -9,14 +9,15 @@ public class TestePessoaBuilder {
         // esperados para criação do objeto, e permite a criação sem uma ordem específica.
         // (Melhor Legibilidade e Flexibilidade)
 
-        Pessoa pessoa = new PessoaBuilder()
+        // Criação do objeto usando o builder como classe estática da classe Pessoa.
+        Pessoa pessoa = new Pessoa.PessoaBuilder()
                 .nome("Eduardo")
                 .sobrenome("Barbosa")
                 .apelido("Edu")
                 .dataNascimento("01/09/1910")
                 .email("edu@email.com")
                 .documento("98765432109")
-                .criaPessoa();
+                .build();
 
         System.out.println(pessoa);
 
