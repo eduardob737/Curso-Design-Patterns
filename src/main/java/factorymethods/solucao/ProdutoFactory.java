@@ -6,8 +6,8 @@ import factorymethods.ProdutoFisico;
 import factorymethods.TipoProdutoEnum;
 
 // Descrição da solução: Criando uma classe que será fábrica de "Produto" com um método responsável por retornar a
-// instância do objeto com os atributos corretos, ou seja, quando um objeto do tipo Produto for criado essa fábrica
-// fará a implementação correta dos atributos aqui programados e retornará o objeto "pronto".
+// instância do objeto com os atributos necessários já definidos, ou seja, quando um objeto do tipo Produto for criado
+// essa fábrica fará a implementação correta dos atributos aqui programados e retornará o objeto "pronto".
 
 public class ProdutoFactory {
     public static Produto getInstance(TipoProdutoEnum tipoProdutoEnum){
