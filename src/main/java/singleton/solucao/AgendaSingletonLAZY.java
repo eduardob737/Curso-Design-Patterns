@@ -16,7 +16,7 @@ public class AgendaSingletonLAZY {
 
     private Map<String, Boolean> agenda = new HashMap<>();
 
-    public AgendaSingletonLAZY(){
+    private AgendaSingletonLAZY(){
         agenda.put("Domingo", Boolean.TRUE);
         agenda.put("Segunda", Boolean.TRUE);
         agenda.put("Terca", Boolean.TRUE);

@@ -8,13 +8,17 @@ public class TesteAgendaComSingleton {
         reservaDiaEAGER("Sexta");
         reservaDiaEAGER("Sabado");
 
-        AgendaSingletonLAZY lazy = AgendaSingletonLAZY.getInstance();
-        AgendaSingletonLAZY lazy2 = AgendaSingletonLAZY.getInstance();
-        System.out.println(lazy);
-        System.out.println(lazy2);
-
         reservaDiaLAZY("Sexta");
         reservaDiaLAZY("Sabado");
+
+        reservaDiaEnum("Sexta");
+        reservaDiaEnum("Sabado");
+
+        AgendaSingletonEnum agenda1 = AgendaSingletonEnum.getInstance();
+        AgendaSingletonEnum agenda2 = AgendaSingletonEnum.getInstance();
+
+        System.out.println(agenda1.hashCode());
+        System.out.println(agenda2.hashCode());
     }
 
     public static void reservaDiaEAGER(String dia){
@@ -25,6 +29,12 @@ public class TesteAgendaComSingleton {
 
     public static void reservaDiaLAZY(String dia){
         AgendaSingletonLAZY agenda = AgendaSingletonLAZY.getInstance();
+        agenda.ocupa(dia);
+        System.out.println(agenda.getAgenda());
+    }
+
+    public static void reservaDiaEnum(String dia){
+        AgendaSingletonEnum agenda = AgendaSingletonEnum.getInstance();
         agenda.ocupa(dia);
         System.out.println(agenda.getAgenda());
     }
