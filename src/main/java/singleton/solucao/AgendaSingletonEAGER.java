@@ -3,9 +3,8 @@ package singleton.solucao;
 import java.util.HashMap;
 import java.util.Map;
 
-// Descrição da solução: Usando SingletonEAGER obtemos uma única instância para fazer as atribuições necessárias no
-// objeto, mantendo sempre a mesma referência na memória, otimizando recursos e código. Com o padrão EAGER o objeto
-// "INSTANCE" é iniciado assim que a classe é carregada pelo Java.
+// Descrição da solução: Com o método EAGER o objeto "INSTANCE" é iniciado assim que a classe é carregada pelo Java,
+// sem depender da chamada do método "getInstance", ficando "disponível" para uso de forma automática.
 
 public class AgendaSingletonEAGER {
 
